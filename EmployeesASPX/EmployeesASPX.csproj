@@ -119,12 +119,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="EmployeesModel.Context.tt">
+    <Content Include="App_Data\EmployeesModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>EmployeesModel.edmx</DependentUpon>
       <LastGenOutput>EmployeesModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="EmployeesModel.tt">
+    <Content Include="App_Data\EmployeesModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>EmployeesModel.edmx</DependentUpon>
       <LastGenOutput>EmployeesModel.cs</LastGenOutput>
@@ -140,11 +140,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <EntityDeploy Include="EmployeesModel.edmx">
+    <EntityDeploy Include="App_Data\EmployeesModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EmployeesModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="EmployeesModel.edmx.diagram">
+    <Content Include="App_Data\EmployeesModel.edmx.diagram">
       <DependentUpon>EmployeesModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -185,19 +185,19 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="AspNetRole.cs">
+    <Compile Include="App_Data\AspNetRole.cs">
       <DependentUpon>EmployeesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AspNetUser.cs">
+    <Compile Include="App_Data\AspNetUser.cs">
       <DependentUpon>EmployeesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AspNetUserClaim.cs">
+    <Compile Include="App_Data\AspNetUserClaim.cs">
       <DependentUpon>EmployeesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AspNetUserLogin.cs">
+    <Compile Include="App_Data\AspNetUserLogin.cs">
       <DependentUpon>EmployeesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="C__MigrationHistory.cs">
+    <Compile Include="App_Data\C__MigrationHistory.cs">
       <DependentUpon>EmployeesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -207,20 +207,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Employee.cs">
+    <Compile Include="App_Data\Employee.cs">
       <DependentUpon>EmployeesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="EmployeesModel.Context.cs">
+    <Compile Include="App_Data\EmployeesModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeesModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="EmployeesModel.cs">
+    <Compile Include="App_Data\EmployeesModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="EmployeesModel.Designer.cs">
+    <Compile Include="App_Data\EmployeesModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeesModel.edmx</DependentUpon>
@@ -251,9 +251,7 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
